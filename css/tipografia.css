@@ -1,6 +1,17 @@
 /* CSS TYPOGRAFÍA */
 /* **************************************************************** */
+html{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+:root{
+    --fontParrafo: 1rem;
+    --fontTitulo18: 1.125rem;
+    --fontTitulo24: 1.5rem;
+}
 
 @font-face {
-    
+    font-family: "PublicSans";
+    src: url("../")
 }
