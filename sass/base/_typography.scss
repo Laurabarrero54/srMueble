@@ -1,0 +1,37 @@
+/* @TIPOGRAFÍA */
+/* ********** */
+
+// FONT-FACE
+@font-face {
+    font-family: "publicSans";
+    src:    url(../../font/publicsans.woff2) format("woff2"),
+            url(../../font/publicsans.woff) format("woff");
+}
+@font-face {
+    font-family: "publicSansBold";
+    src:    url(../../font/publicsansBold.woff2) format("woff2"),
+            url(../../font/publicsansBold.woff) format("woff");
+    font-weight: 800;
+}
+
+html{
+    font-size: 16px;
+    font-family: $fontFamily;
+    color: map-get($colores, negro);
+}
+
+// Clases Tipográficas
+.titulo{
+    font-size: 36px;
+    font-weight: bold;
+}
+.subtitulo{
+
+}
+.parrafo{
+
+}
+.copy{
+    font-size: .5625rem;
+    color: map-get($colores, negro);
+}

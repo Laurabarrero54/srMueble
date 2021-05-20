@@ -5,101 +5,126 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SrMueble</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header>
-            <h1 class="tituloPrincipal">Sr.Mueble</h1>
-        </header>
-        <main>
-            <!-- Banner -->
-            <picture>
-                <source srcset="
-                ./img/banner_silla.jpg 1x,
-                ./img/banner_silla@2x.jpg 2x,
-                ./img/banner_silla@3x.jpg 3x
-                ">
-                <img src="" alt="silla azul de madera">
-            </picture>
+        <div class="contenedor">
+            <header>
+                <!-- Logotipo -->
+                <h1 class="tituloPrincipal">Sr.Mueble</h1>
 
+                <!-- Menu Principal -->
+                <nav class="menuPrincipal">
+                    <a class="menuPrincipal__servicios" href="#">servicios</a>
+                    <a class="menuPrincipal__proyectos" href="#">proyectos</a>
+                    <a class="menuPrincipal__contactar" href="#">contactar</a>
+                </nav>
+            </header>
+            <main>
+                <!-- Banner -->
+                <picture>
+                    <source
+                        srcset="
+                            ./img/banner_silla.jpg    1x,
+                            ./img/banner_silla@2x.jpg 2x,
+                            ./img/banner_silla@3x.jpg 3x
+                        "
+                    />
+                    <img src="" alt="silla azul de madera" />
+                </picture>
 
-            <!-- Teléfono -->
-            <a href="tel:+34666666666">+34 666 666 666</a>
-            <!-- Quienes Somos -->
-            <section class="quienes">
-                <h4 class="subtitulo">¿Quienes somos?</h4>
-                <article class="anyo1988">
-                    <h5 class="anyo1988__titulo">1988</h5>
-                    <p class="anyo1988__texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Faucibus sollicitudin et tellus.
-                    </p>
+                <!-- Teléfono -->
+                <a href="tel:+34666666666">+34 666 666 666</a>
+                <!-- Quienes Somos -->
+                <section class="quienes">
+                    <h4 class="subtitulo">¿Quienes somos?</h4>
+                    <article class="anyo1988">
+                        <h5 class="anyo1988__titulo">1988</h5>
+                        <p class="anyo1988__texto">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Faucibus sollicitudin et tellus.
+                        </p>
+                    </article>
+                    <article class="anyo1994">
+                        <h5 class="anyo1994__titulo">1994</h5>
+                        <p class="anyo1994__texto">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Faucibus sollicitudin et tellus.
+                        </p>
+                    </article>
+                </section>
+                <!-- YouTube -->
+                <iframe class="youtube"></iframe>
+                <!-- Servicios -->
+                <section class="servicios">
+                    <h4 class="servicios__titulo">Servicios</h4>
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/sofaAmarillo.jpg    1x,
+                                ./img/sofaAmarillo@2x.jpg 2x,
+                                ./img/sofaAmarillo@3x.jpg 3x
+                            "
+                        />
+                        <img src="" alt="silla azul de madera" />
+                    </picture>
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/sofaRojo.jpg    1x,
+                                ./img/sofaRojo@2x.jpg 2x,
+                                ./img/sofaRojo@3x.jpg 3x
+                            "
+                        />
+                        <img src="" alt="silla azul de madera" />
+                    </picture>
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/sofaVerde.jpg    1x,
+                                ./img/sofaVerde@2x.jpg 2x,
+                                ./img/sofaVerde@3x.jpg 3x
+                            "
+                        />
+                        <img src="" alt="silla azul de madera" />
+                    </picture>
+                </section>
+                <!-- Newsletters -->
+                <section class="newsletter">
+                    <h5 class="newsletter__titulo">
+                        ¿Quieres recibir nuestras novedades?
+                    </h5>
+                    <form class="newsletter__formulario">
+                        <input type="email" name="email" placeholder="e-mail" />
+                        <button type="submit">REGISTRATE</button>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <article class="contactar">
+                    <h5 class="contactar__titulo">Contactar</h5>
+                    <ul class="contactar__lista">
+                        <li>Dirección Plaza España, 34</li>
+                        <li>Palma de Mallorca</li>
+                        <li>info@srmuebles.com</li>
+                    </ul>
                 </article>
-                <article class="anyo1994">
-                    <h5 class="anyo1994__titulo">1994</h5>
-                    <p class="anyo1994__texto">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Faucibus sollicitudin et tellus.
-                    </p>
+                <article class="redes">
+                    <h5 class="redes__titulo">Redes</h5>
+                    <ul>
+                        <li class="redes__twitter">
+                            <a href="https://twitter.com/">Twitter</a>
+                        </li>
+                        <li class="redes__pinterest">
+                            <a href="https://pinterest.com/">Pinterest</a>
+                        </li>
+                        <li class="redes__instagram">
+                            <a href="https://instagram.com/">Instagram</a>
+                        </li>
+                    </ul>
                 </article>
-            </section>
-            <!-- YouTube -->
-            <iframe class="youtube"></iframe>
-            <!-- Servicios -->
-            <section class="servicios">
-                <h4 class="servicios__titulo">Servicios</h4>
-                <picture>
-                    <source srcset="
-                    ./img/sofaAmarillo.jpg 1x,
-                    ./img/sofaAmarillo@2x.jpg 2x,
-                    ./img/sofaAmarillo@3x.jpg 3x
-                    ">
-                    <img src="" alt="silla azul de madera">
-                </picture>
-                <picture>
-                    <source srcset="
-                    ./img/sofaRojo.jpg 1x,
-                    ./img/sofaRojo@2x.jpg 2x,
-                    ./img/sofaRojo@3x.jpg 3x
-                    ">
-                    <img src="" alt="silla azul de madera">
-                </picture>
-                <picture>
-                    <source srcset="
-                    ./img/sofaVerde.jpg 1x,
-                    ./img/sofaVerde@2x.jpg 2x,
-                    ./img/sofaVerde@3x.jpg 3x
-                    ">
-                    <img src="" alt="silla azul de madera">
-                </picture>
-            </section>
-            <!-- Newsletters -->
-            <section class="newsletter">
-                <h5 class="newsletter__titulo">¿Quieres recibir nuestras novedades?</h5>
-                <form class="newsletter__formulario">
-                    <input type="email" name="email" placeholder="e-mail" />
-                    <button type="submit">REGISTRATE</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <article class="contactar">
-                <h5 class="contactar__titulo">Contactar</h5>
-                <ul class="contactar__lista">
-                    <li>Dirección Plaza España, 34</li>
-                    <li>Palma de Mallorca</li>
-                    <li>info@srmuebles.com</li>
-                </ul>
-            </article>
-            <article class="redes">
-                <h5 class="redes__titulo">Contactar</h5>
-                <ul class="redes__lista">
-                    <li>Dirección Plaza España, 34</li>
-                    <li>Palma de Mallorca</li>
-                    <li>info@srmuebles.com</li>
-                </ul>
-            </article>
-            <h6 class="copyright">Copyright 2021 - SrMueble</h6>
-        </footer>
+                <h6 class="copyright">Copyright 2021 - SrMueble</h6>
+            </footer>
+        </div>
     </body>
 </html>
